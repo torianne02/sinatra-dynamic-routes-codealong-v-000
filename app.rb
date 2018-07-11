@@ -20,7 +20,7 @@ class App < Sinatra::Base
   end
 
   get "/multiply/:num1/:num2" do
-    @solution = :num1 * :num2
+    @solution = (:num1 * :num2)
     "#{@solution}"
   end
 end
